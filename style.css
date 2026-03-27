@@ -1,9 +1,9 @@
 #titulo_principal {
-    background-color: #8b6f1e;
-    color: white;
+    background-color: #00ff15;
+    color: rgb(243, 243, 243);
 
 }
 .titulo_secundario{
-        background-color: #2f4f22;
-
+        background-color: #096800;
+        color:white
 }
