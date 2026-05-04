@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 #titulo_principal {
-    background-color: #00ff15;
+    background-color: rgb(9, 246, 28);
     color: rgb(243, 243, 243);
 
 }
@@ -22,6 +22,25 @@
     letter-spacing: none; /*Espaçamento entre letras*/
     text-indent: 20px; /*Espaçamento de paragrago primeira linha*/
     text-align: none; /*Alinhamento do texto: Left - right -justify e center*/
+
+    border-style: solid; /*Estilo da borda solid,dashed,dotted, groove, ridget, inset, outset*
+    border-width: 10px;/*espessura da borda*
+    border-color: rgb(255, 0, 0); /*cor da borda*/
+    border: none 5px rgb(red, green, blue) ;/*Definir estilo, espessura e cor da borda numa mesma linha*/
+    border-top: dotted 10px rebeccapurple;
+    border-left: dotted 20px red;
+    border-bottom: solid 15px yellow; /*estilizar lado direito da borda*/
+    border-radius: 50px ; /*Arredondar cantos da borda - px - %*/
+    margin: 20px 50px; /*Margem do lado de fora da borda*/
+    margin-left:20px ;/*Margem a esquerda fora da borda*/
+    margin-right: 20px; /*Margem a direita fora da borda*/
+    margin-bottom:20px ; /*Margem de baixo fora da borda*/
+    margin-top: 20px; /*Margem de cima fora da borda*/
+    padding: 20px; /*Margem DENTRO da Borda*/
+    padding-left: 20px ;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom:20px ;
 }
 
 
@@ -41,3 +60,12 @@ font-size: 16px; /*tamanho da fonte - px/em/rem*/
 nav a{
  text-decoration: None;
 }
+
+.teste_display
+background-color: #none;
+display: none;
+width: none;
+height: none;
+}
+
+
