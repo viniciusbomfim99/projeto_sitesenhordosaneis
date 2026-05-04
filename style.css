@@ -61,11 +61,66 @@ nav a{
  text-decoration: None;
 }
 
-.teste_display
-background-color: #none;
-display: none;
-width: none;
-height: none;
+{ 
+background-color: none
+display: none
+width: 
+height: 
 }
 
+#teste_estilo_ul {
+list-style-type: disc; /*Disc ou square* defini o estilo de marcador da lista não ordenada (UL)*/
 
+}
+
+#teste_estilo_ol {
+list-style-type: decimal; /*Decimal, lower-roman, upper-roman lower-greek upper-alfa lower-alpha* - Define o estilo de marcadores de lista ordenadas*/
+list-style-image: url (-webkit-image-set);
+}
+
+li{
+border:solid 3px orange;
+
+list-style-position: outside; /*Ele serve para dizer ao navegador se o marcador da lista faz parte ou não do texto da lista: inside ou outside*/
+}
+
+#impacto{
+background-image: url("img/senhordosaneis_fundo.jpg"); /*Carrega imagem ao fundo do elemento html*/
+background-repeat: no-repeat; /*repeat, no repeat, repeat-y, repeat-x, Configura a forma como a imagem ira repetir ao fundo do elemento html*/
+background-position:center; /*Left, right, top, bottom, center e pode dois ao mesmo tempo*/
+width:2000px ;
+height: 1500px;
+background-size: cover; /*Serve para definiar COMO a imagem será exibida ao fundo do elemento Html - contain - cover- px - % auto*/
+background-attachment: fixed; /*Define como a imagem vai lidar com o scroll ao findo do elemento html - scroll e fixed*/
+text-shadow: none; /*Define a sombra do texto*/
+position:relative /*Define o posicionamento atras ou frente dos elementos html fixed, relative, absolute e static*/
+
+}
+
+.noticia {
+border: solid 3px white;
+width: 200 px;
+position:fixed; /*Define o posicionamento atras ou frente dos elementos html fixed, relative, absolute e static*/
+height: visible; /*tratar o comportamento de quando por exemplo um texto passa das bordas de um elemento html (da um overflow) ;*/
+overflow: auto; /*configura o comportamento =de quando por exempo um texto passa das bordas de um elemento html visible/hideem/scroll/auto;*/
+box-shadow: 3px 3px 3px 3px orange; /*Define a sobra do elemento html de bloco*/
+}
+
+.um{
+background-color:blue ;
+top: 0px;
+left: 50px;
+z-index:3; /*Define a ordem que o elemento vai ficar uns atras dos outros*/
+}
+
+.dois{
+    background-color: red;
+top: 100px;
+left:150px;
+}
+
+.tres{
+background-color: green;
+top:200px ;
+left:250px;
+}
