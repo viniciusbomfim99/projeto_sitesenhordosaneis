@@ -59,9 +59,38 @@ font-size: 16px; /*tamanho da fonte - px/em/rem*/
 
 nav a{
  text-decoration: None;
+ color: white;
 }
 
-{ 
+nav a:hover{
+color: black;
+opacity: 0.7;
+}
+
+.transicao{
+background-color: white;
+border: solid 3px red;
+color: black;
+width: 300px;
+height:300px; 
+transition-duration: 2s; /*Define o tempo de transição*/
+transition-property: width,backgroud-color; /*Define quais propriedades css irão entrar na transição (nome das propriedades/all*/
+transition-delay: 3s; /*Delay apra iniciar a trasição*/
+transition-timing-function: ease-in; /*Ease-in, ease-out,linear,ease, ease-in-out*/
+}
+
+#email:focus{
+background-color: green;
+color: white;
+}
+
+.transicao:hover {
+background-color: pink;
+width: 600px;
+color: blue;
+
+}
+
 background-color: none
 display: none
 width: 
@@ -106,6 +135,43 @@ overflow: auto; /*configura o comportamento =de quando por exempo um texto passa
 box-shadow: 3px 3px 3px 3px orange; /*Define a sobra do elemento html de bloco*/
 }
 
+h1{
+
+animation-name:multicolor ;
+animation-duration:5s ;
+animation-delay:2s ;
+animation-fill-mode: forwards ; /*Forward, backwards*/
+animation-iteration-count:3 ; /*Quantidade de animações vezes/infinite*/
+
+}
+
+@keyframes multicolor{
+
+    from{color: red;}
+    to{color: blue;}
+
+}
+
+@keyframes foguete{
+0%{margin-left: 0%;}
+25%{margin-left: 80%; transform: rotate(0deg);}
+50%{margin-left: 80%; transform: rotate(-120deg);}
+75%{margin-left: 0%; transform: rotate(-120deg);}
+100%{margin-left: 00%; transform: rotate(0deg);}
+
+}
+
+.animacao img{
+display: block;
+animation: foguete;
+animation-duration: 5s;
+animation-iteration-count: infinite ;
+
+
+}
+
+}
+
 .um{
 background-color:blue ;
 top: 0px;
@@ -124,3 +190,4 @@ background-color: green;
 top:200px ;
 left:250px;
 }
+
